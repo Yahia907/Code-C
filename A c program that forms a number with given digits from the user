@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+int i,number,ndigits,digit[];
+printf("\n enter the number of digits in the array :");
+scanf ("%d",&ndigits);
+number=0;
+for (i=0;i<ndigits;i++)
+{ printf("\n digit[%d]=",i);
+scanf("%d",&digit[i]);
+}
+i=0;
+while(i<ndigits)
+{
+number=number + digit[i]*pow(10,i);
+i++;
+}
+printf("\n the number is %d",number);
+return 0;
+}
