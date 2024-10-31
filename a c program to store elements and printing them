@@ -1,0 +1,21 @@
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main ()
+    {
+    int n,i,arr[20];
+    printf("\n enter the number of the array's elements:");
+    scanf("%d",&n);
+    printf ("\n enter the elements the array :");
+    for(i=0;i<n;i++)
+    {
+    printf("\n arr[%d]= ",i);
+    scanf("%d",&arr[i]);
+    }
+    printf("\n the array's elements are :");
+    i=0;
+    while(i<n){
+    printf("\t arr[%d] =%d ",i,arr[i]);
+    i++;
+    }
+    return 0;
+    }
