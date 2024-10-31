@@ -1,0 +1,16 @@
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main ()
+    {
+    int n,sum=0,i=0,arr[20];
+    
+    scanf("%d",&n);// reading number of  elements of the array
+    while(i<n)
+    {
+    scanf("%d",&arr[i]);// reading  elements of the array
+    i++;
+    sum=sum+i;
+    }
+    printf("sum = %d",sum);// output of the array's elements sum
+    return 0;
+    }
