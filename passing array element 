@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+void func(int *);
+int main() {
+int i,index, size;
+printf("\n enter the size of the array :");
+scanf("%d",&size);
+int arr[size];
+for(i=0;i<size;i++){
+printf("\n arr[%d]=",i);
+scanf("%d",&arr[i]);
+}
+do{
+printf("\n enter the index of the element to be passed ");
+scanf("%d",&index);
+}while(index<0||index>=size);
+
+func(&arr[index]);
+
+return 0;
+
+}
+
+void func(int *a){
+int b;
+b=*a+10;
+
+printf("\n%d",b);
+}
