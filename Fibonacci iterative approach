@@ -1,0 +1,25 @@
+    //iterative approach for counting a fibonacci term c program 
+    
+    
+#include<stdio.h>
+#include<stdlib.h>
+int fib(int a){
+int i,f0=0,f1=1,fn=0;//f0 and f1 are zero'th and first terms of fibonacci series
+for(i=2;i<=a;i++){// loop starts from 2 because n1,n2 are know terms of fibonacci sequence
+fn=f1+f0;//Fibonacci term number n 
+f0=f1;
+f1=fn;
+}
+return fn ;
+}
+int main () {
+int n;
+printf("\n enter the number of terms :\n");
+do{
+scanf("%d",&n);
+}while(n<2);//accept a value larger than 2 for the number of terms 
+
+fib(n);//function call to count the fibonacci terms n
+
+printf("\n %d",fib(n));//printing the value of fib(n) function 
+}
